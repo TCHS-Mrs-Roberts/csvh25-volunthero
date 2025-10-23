@@ -1,0 +1,19 @@
+```markdown
+# Using GitHub Project (Kanban) for the Team
+
+Suggested columns
+- Backlog (new issues)
+- To do (planned for next sprint)
+- In progress (active work; link branch/PR)
+- In review (PR open)
+- Done (merged/deployed)
+
+How to use
+- Add each task as an issue and link it to the project.
+- Move issue cards as their state changes.
+- Reference issue numbers in commits and PRs: fixes #12
+
+Suggested automation
+- Connect PRs to move cards automatically (GitHub Projects automation).
+- Use labels: bug, feature, docs, high-priority.
+```

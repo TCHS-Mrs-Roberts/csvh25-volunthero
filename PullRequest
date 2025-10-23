@@ -1,0 +1,27 @@
+
+```name=.github/PULL_REQUEST_TEMPLATE.md
+<!-- Pull Request Template -->
+
+## Summary
+Short description of changes
+
+## Related Issues
+- Closes: #issue-number
+- Related: #issue-number
+
+## Type of change
+- [ ] New feature
+- [ ] Bugfix
+- [ ] Documentation
+- [ ] Refactor
+- [ ] Tests
+
+## Checklist
+- [ ] I have added/updated tests (if applicable)
+- [ ] I ran linting and fixed issues
+- [ ] I updated the README or documentation if required
+- [ ] This PR has at least one approving review before merge
+- [ ] All CI checks pass
+
+## Screenshots / Demo
+(if UI changes, paste screenshots or link to a deployment preview)

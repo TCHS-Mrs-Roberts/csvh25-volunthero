@@ -1,0 +1,60 @@
+name: CI — Build & Test
+
+on:
+  push:
+    branches: [ main, develop, 'feature/**' ]
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  detect:
+    runs-on: ubuntu-latest
+    outputs:
+      has_package: ${{ steps.check.outputs.has_package }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: check
+        run: |
+          if [ -f package.json ]; then
+            echo "::set-output name=has_package::true"
+          else
+            echo "::set-output name=has_package::false"
+          fi
+
+  node-check:
+    needs: detect
+    if: needs.detect.outputs.has_package == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+      - name: Install dependencies
+        run: npm ci
+      - name: Run tests
+        run: npm test --if-present
+      - name: Run linters
+        run: |
+          npm run lint --if-present
+
+  html-check:
+    needs: detect
+    if: needs.detect.outputs.has_package == 'false'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install html-validate
+        run: npm i -g html-validate || true
+      - name: Lint HTML (best-effort)
+        run: |
+          if command -v html-validate >/dev/null 2>&1; then
+            html-validate "**/*.html" || true
+          else
+            echo "html-validate not available; skipping HTML lint"
+          fi
+
+# Notes:
+# - This workflow handles both Node-based projects (package.json) and simple static HTML projects.
+# - Teams can customize the script to run framework-specific builds or deployment steps.

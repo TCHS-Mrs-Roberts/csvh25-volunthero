@@ -1,0 +1,53 @@
+```markdown
+# Collaborative Website Project
+
+Overview
+- Build a responsive, accessible, multi-page website as a team of 3–5 students.
+- Focus on user needs, accessibility, cross-device layout, and maintainable code.
+- Work in a GitHub repository using issues, branches, and pull requests.
+
+Learning objectives
+- Apply HTML, CSS, and JavaScript (or chosen framework) to produce a working website.
+- Practice collaborative software development (issues, branches, PRs, code review).
+- Produce documentation, tests (where applicable), and a deployment (GitHub Pages or equivalent).
+- Evaluate peers and reflect on the collaborative process.
+
+Deliverables (per team)
+1. Live site (GitHub Pages URL or equivalent) with at least 3 meaningful pages.
+2. Code repository with:
+   - A README describing the project and running/build instructions.
+   - A CONTRIBUTING.md and clear branch/PR process.
+   - Issues and at least 4 closed issues representing tasks.
+   - Pull requests with reviews and merge history.
+3. Short recorded demo (5–8 minutes) or a slide + video walkthrough.
+4. Peer-evaluation forms completed by each team member.
+
+Team size and roles
+- Team size: 3–5.
+- Suggested roles (rotate if you like): Product Owner (UX/content), Frontend lead, Accessibility/QA, Integration/DevOps.
+
+Timeline (example 4-week schedule)
+- Week 0: Team formation and tech choices.
+- Week 1: Requirements, wireframes, and repository setup. (Deliver: repo with README + initial issues)
+- Week 2: MVP implementation (core pages + navigation). (Deliver: working local build & deployed preview)
+- Week 3: Feature completion, responsive styles, accessibility improvements, testing.
+- Week 4: Polish, documentation, final demo, peer evaluations, submission.
+
+Assessment
+- See RUBRIC.md for detailed grading breakdown.
+
+Submission
+- Final commit to main branch and link to live site.
+- Submit the repository URL and live site URL to the course LMS (or as instructed).
+- Ensure peer evaluations are completed by the deadline.
+
+Support & tools
+- Use GitHub Issues and Pull Requests for all work.
+- Use GitHub Pages, Netlify, Vercel, or similar for deployment.
+- Recommended linters: ESLint (JS), stylelint (CSS), and an HTML validator.
+
+Academic integrity
+- This assignment is collaborative. Copying from external sources is allowed only with proper attribution and license compliance; plagiarism rules of the course apply.
+
+Questions? Contact the instructor on the class communication channel.
+```

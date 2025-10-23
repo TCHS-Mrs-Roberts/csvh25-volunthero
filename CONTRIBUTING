@@ -1,0 +1,34 @@
+```markdown
+# Contributing / Workflow Guide
+
+Branch strategy
+- main — stable, always deployable.
+- develop (optional) — integration branch.
+- feature/<short-description> — feature branches for each task/issue.
+- fix/<issue-number>-short — bugfix branches.
+
+General workflow
+1. Create an issue describing the task (assign owner and add labels).
+2. Create a branch from main (or develop): git checkout -b feature/issue-123-navbar
+3. Implement changes, commit frequently with meaningful messages.
+   - Commit format suggestion: feat(navbar): add responsive menu
+4. Push branch and open a Pull Request to main (or develop).
+5. Request at least one reviewer from your team.
+6. Address review comments; when approved, merge via Squash or Merge (follow project policy).
+
+Git tips
+- git checkout -b feature/your-feature
+- git add -A; git commit -m "short, meaningful message"
+- git push --set-upstream origin feature/your-feature
+
+Code review expectations
+- Focus on clarity, correctness, and accessibility.
+- Leave constructive comments and approve once issues are resolved.
+
+Testing & CI
+- Add tests where applicable (unit or integration).
+- Fix linter warnings before requesting merge.
+
+Deployment
+- If using GitHub Pages, ensure build step writes to the gh-pages branch or main as configured.
+```

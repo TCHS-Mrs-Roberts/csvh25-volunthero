@@ -1,0 +1,40 @@
+```markdown
+# Grading Rubric — Collaborative Website Project
+
+Total: 100 points
+
+1. Functionality & Completeness — 30 points
+- 0–10: Core functionality missing or broken.
+- 11–20: Most features implemented; some broken or incomplete.
+- 21–30: All required features work as described; smooth navigation and working links.
+
+2. Design, Responsiveness & UX — 20 points
+- 0–6: Poor layout, not responsive.
+- 7–13: Partially responsive, basic UI, some UX issues.
+- 14–20: Responsive across common device widths; polished UI, consistent styles.
+
+3. Accessibility — 15 points
+- 0–5: Major accessibility issues (missing alt, bad semantics).
+- 6–10: Some accessibility improvements; partial keyboard support.
+- 11–15: Good semantic markup, alt text, ARIA where appropriate, keyboard accessible, color contrast considered.
+
+4. Code Quality & Tooling — 15 points
+- 0–5: Unreadable or disorganized code, no usage of version control best practices.
+- 6–10: Some modularization, basic linting, but inconsistent conventions.
+- 11–15: Well-structured code, clear separation of concerns, linting/tests in CI, meaningful commits and PRs.
+
+5. Collaboration & Process — 10 points
+- 0–3: Little evidence of team collaboration (single author, no issues/PRs).
+- 4–7: Some collaboration (issues, a few PRs and reviews).
+- 8–10: Active collaboration with issues, tasks, code reviews, and regular commits across team members.
+
+6. Documentation & Presentation — 10 points
+- 0–3: No README or documentation; poor demo.
+- 4–7: Basic README, build/run instructions, passable demo.
+- 8–10: Clear README, design decisions documented, good demo/walkthrough.
+
+Late policy
+- Deduction of X% per late day (set per course policy).
+
+Notes on partial credit
+- Instructor will consider complexity of features when awarding points.
